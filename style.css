@@ -12,23 +12,29 @@ body {
 .nav-container {
     display: flex;
     align-items: center;    
-    margin: 0 auto;
-    padding: 1em;
-    border: 1px solid red;    
+    margin: 0 1em;
+    padding: 1em;    
+    font-size: 1.2em;
 }
 
 .nav-container_right {
-    display: flex;
-    align-content: center;
+    display: flex;    
     align-items: center;
-    float: right;
-    margin-left: 15em;
+    flex: 1 1 100%;
+    justify-content: flex-end;    
+}
+
+.nav-container_left {
+    display: flex;    
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 100%;
 }
 
 .nav-container a {
     padding: 0 .5em;
     text-decoration: none;
-    float: left;    
+       
 }
 
 .nav-container_dots {
@@ -38,7 +44,105 @@ body {
 #sign-in {
     background: #4285f4;
     color: #fff;    
-    padding: .3em 2em;   
+    padding: .5em 1em;       
+    border-radius: .4em;
+}
+
+.google-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.google-search {
+    display: flex;
+    justify-content: center;
+    margin: 7em;
+}
+
+.google-search_icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 35em;
+    border: 1px solid #ccc;
+    border-radius: 3em;
+    padding: 1.5em;
+}
+
+.google-search_icon button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fafdff;
+}
+
+.google-search_icon button:hover {
+    box-shadow: #e9e9e9 1px 1px;
+    border-radius: .3em;
+}
+
+.google-search_icon input {
+    border: none;
+    outline: none;
+    padding-left: 2em;
+    width: 100%;
+    color: #66666b;
+    font-size: 1.4em;
+}
+
+.google-search_icon i {
+    color: #66666b;
+}
+
+.submit-container {
+    display: block;
+    text-align: center;    
+    margin: 1.3em 0 9em;    
+}
+
+.submit-container input[type="submit"] {
+    line-height: 2em;
+    border: 1px solid #f8f2f2;
+    border-radius: 4px;
+    margin: 0 2em 1em;
+    padding: .3em .5em;
+    font-size: 1.2em;
+    color: #0e0e0e;
+    outline: none;
     
 }
 
+.submit-container input[type="submit"]:hover {
+    background-color: #e7ecf0;
+    cursor: pointer;
+    box-shadow: #9c9c9e 1px 1px;
+}
+
+.footer {
+    padding-top: 1em;
+    border-top: 1px solid #c5c4c4;
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        
+}
+
+.footer a {
+    margin: 3em 1em 0;
+    text-decoration: none;    
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:600px) {
+    .nav-container {
+        font-size: 1.1em;
+    }
+
+}
