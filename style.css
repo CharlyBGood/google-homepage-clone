@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;    
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid red;    
+}
+
+.nav-container_right {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    float: right;
+    margin-left: 15em;
+}
+
+.nav-container a {
+    padding: 0 .5em;
+    text-decoration: none;
+    float: left;    
+}
+
+.nav-container_dots {
+    width: 3.7em;    
+}
+
+#sign-in {
+    background: #4285f4;
+    color: #fff;    
+    padding: .3em 2em;   
+    
+}
+
