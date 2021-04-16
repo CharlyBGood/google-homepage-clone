@@ -133,6 +133,7 @@ body {
 .footer a {
     margin: 3em 1em 0;
     text-decoration: none;    
+    font-size: 1.2em;
 }
 
 .footer a:hover {
@@ -142,7 +143,32 @@ body {
 
 @media screen and (max-width:600px) {
     .nav-container {
-        font-size: 1.1em;
+        font-size: 1em;
+        padding: .3em 1em;        
+        width: 100%;
+        
+    }
+
+    .nav-container_right {
+        margin-right: 1em;
+    }
+
+    .google-search {
+        margin: 6em;
+    }
+
+    .submit-container {
+        margin: 1.5em 4em;
+    }
+
+    #Sign-in {
+        color: red;        
+    }
+
+    .footer {
+        margin: 0 auto;
+        padding: 1em .3em;
+        
     }
 
 }
