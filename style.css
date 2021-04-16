@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;    
     margin: 0 1em;
-    padding: 1em;    
+    padding: 2em;    
     font-size: 1.2em;
 }
 
@@ -38,14 +38,16 @@ body {
 }
 
 .nav-container_dots {
-    width: 3.7em;    
+    width: 3.1em;    
 }
 
-#sign-in {
+.sign-in {
     background: #4285f4;
     color: #fff;    
-    padding: .5em 1em;       
+    padding: .3em .5em ;      
     border-radius: .4em;
+    outline: none;
+    border: 1px solid #aca8a8;
 }
 
 .nav-toggle {
@@ -163,11 +165,11 @@ body {
     .nav-container {
         font-size: 1em;
         padding: .3em 1em;
-        width: 100%;
-        
+        width: 100%;        
     }
 
     .nav-container_right {
+        display: flex;        
         margin: 0 1em;
         top: 0;
     }
@@ -177,7 +179,7 @@ body {
     }
 
     .submit-container {
-        margin: 1.5em 4em;
+        display: none;
     }
 
     .nav-toggle {
@@ -204,10 +206,9 @@ body {
         top: 0;
     }
 
-    .footer {
-        margin: 0 auto;
-        padding: 1em .3em;
+    .footer {        
         
+        margin-top: 11rem;        
     }
 
 }
