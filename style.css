@@ -162,9 +162,10 @@ body {
 
 
 @media screen and (max-width:600px) {
+    
     .nav-container {
         font-size: 1em;
-        padding: .3em 1em;
+        padding: 1em 1em;
         width: 100%;        
     }
 
@@ -206,9 +207,15 @@ body {
         top: 0;
     }
 
-    .footer {        
-        
+    .footer {      
+        min-height: 100%;  
+        position: relative;
+        padding: 0;
         margin-top: 11rem;        
+    }
+
+    .footer-container {
+        margin: 0 auto;
     }
 
 }
