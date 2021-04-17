@@ -227,3 +227,7 @@ body {
     }
 
 }
+
+@media (prefers-color-scheme: dark) { 
+    body { background: white; }
+}
