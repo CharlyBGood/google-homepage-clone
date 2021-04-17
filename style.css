@@ -228,6 +228,6 @@ body {
 
 }
 
-@media (prefers-color-scheme: dark) { 
+@media (prefers-color-scheme: white) { 
     body { background: white; }
 }
