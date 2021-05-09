@@ -203,7 +203,8 @@ body {
     }
 
     .nav-container_left.active a {
-        padding: 2em;
+        padding: 0 2em;
+        margin: 0 .5em;
         top: 0;
     }
     
@@ -228,6 +229,3 @@ body {
 
 }
 
-@media (prefers-color-scheme: white) { 
-    body { background: white; }
-}
