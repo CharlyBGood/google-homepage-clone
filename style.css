@@ -13,6 +13,8 @@ body {
   font-size: 11px;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  background-color: #f8f7f6;
 }
 
 .nav-container {
@@ -80,10 +82,10 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin-top: 11%;
+  /* margin-top: 11%; */
   align-items: center;
   justify-content: center;
-  /* height: 90vh; */
+  height: 90vh;
   gap: 7em;
 }
 
@@ -185,7 +187,7 @@ body {
   align-items: center;
   width: 100%;
   border-top: 1px solid #c5c4c4;
-  background-color: #eee9e1;
+  background-color: #ece7e7;
 }
 
 .footer a {
