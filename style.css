@@ -17,12 +17,12 @@ body {
 
 .nav-container {
   display: flex;
-  align-items: center;  
+  align-items: center;
   font-size: 1.2em;
 }
 
 .nav-container div {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .nav-container_right {
@@ -79,9 +79,11 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin-top: 11%;
   align-items: center;
-  justify-content: space-evenly;
-  height: 90vh;
+  justify-content: center;
+  /* height: 90vh; */
+  gap: 7em;
 }
 
 /* .google-img {
@@ -155,8 +157,7 @@ body {
 .submit-container input[type="submit"] {
   line-height: 2em;
   border: 1px solid #f8f2f2;
-  border-radius: 4px;
-  margin: 0 2em 1em;
+  border-radius: 0.5em;
   padding: 0.3em 0.5em;
   font-size: 1.2em;
   color: #0e0e0e;
@@ -193,7 +194,6 @@ body {
 @media screen and (max-width: 600px) {
   .nav-container {
     font-size: 1em;
-    padding: .5em 1em;
     width: 100%;
   }
 
@@ -228,16 +228,37 @@ body {
 
   .nav-container_left.active {
     display: flex;
+    width: 29%;
+    /* justify-content: flex-start; */
+    margin: 0;
+    flex: 0.4;
+    align-content: flex-start;
   }
 
-  .nav-container_right {    
+  .nav-container_right {
     margin: 0;
   }
   .nav-container_left.active a {
     position: relative;
     padding: 0 2em;
     margin: 1em 2em;
-    top: 0;
+    /* top: 0; */
+    margin-left: 4em;
+  }
+
+  .main_section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1%;
+    /* justify-content: space-evenly; */
+    /* height: 50vh; */
+    height: 90vh;
+    /* position: relative; */
+    gap: 1em;
+    /* top: 50%; */
+    /* position: fixed; */
+    align-items: center;
   }
 
   .google-search_icon input {
