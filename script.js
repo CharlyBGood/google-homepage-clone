@@ -1,7 +1,7 @@
 class Giphy {
   constructor(keyword) {
     this.keyword = keyword;
-    this.endpoint = "http://api.giphy.com/v1/gifs";
+    this.endpoint = "https://api.giphy.com/v1/gifs";
     this.api_key = "o8ZEiRD0VN5d24cuqr4HyCYVVWwNbMn7";
   }
 
