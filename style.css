@@ -178,7 +178,7 @@ body {
 
 .footer {
   border-top: 1px solid #c5c4c4;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   padding: 1em;
   display: flex;
