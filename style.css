@@ -180,17 +180,18 @@ body {
   border-top: 1px solid #c5c4c4;
   position: absolute;
   bottom: 0;
-  padding: 1em;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   border-top: 1px solid #c5c4c4;
+  background-color: #eee9e1;
 }
 
 .footer a {
   text-decoration: none;
   font-size: 1em;
+  padding: 1em 0;
 }
 
 .footer a:hover {
@@ -234,8 +235,6 @@ body {
 
   .nav-container_left.active {
     display: flex;
-    width: 29%;
-    /* justify-content: flex-start; */
     margin: 0;
     flex: 0.4;
     align-content: flex-start;
@@ -248,8 +247,6 @@ body {
     position: relative;
     padding: 0 2em;
     margin: 1em 2em;
-    /* top: 0; */
-    margin-left: 4em;
   }
 
   .main_section {
@@ -268,7 +265,7 @@ body {
   }
 
   .video {
-    width: 50vw
+    width: 50vw;
   }
 
   #gif {
