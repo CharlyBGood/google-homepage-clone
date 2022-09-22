@@ -90,7 +90,7 @@ body {
 
 .video {
   display: none;
-  width: 25vw;
+  width: 50vw;
 }
 
 .video.active {
