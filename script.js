@@ -37,16 +37,22 @@ toggleButton.addEventListener("click", () => {
 });
 
 let search = document.getElementById("search");
+let keyword = document.getElementById("gsearch");
+
+keyword.addEventListener("keydown", (e) => {
+  console.log("teta")
+  console.log(e.target.value)
+})
 
 search.addEventListener("click", () => {
-  let keyword = document.getElementById("gsearch").value;
-  console.log(keyword);
+  let keywordW = keyword.value;
+  console.log(keywordW);
   let gifDiv = document.getElementById("video");
   let section = document.getElementById("main_section");
   section.style.gap = "1em";
   section.style.margin = "3% auto"
   gifDiv.style.display = "block";
-  Giphy.getUrlAsync(keyword, (videoURL) => {
+  Giphy.getUrlAsync(keywordW, (videoURL) => {
     document.getElementById("gif").src = videoURL;
   });
 });

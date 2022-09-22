@@ -154,7 +154,7 @@ body {
   gap: 1em;
 }
 
-.submit-container input[type="submit"] {
+.submit-container .btn {
   line-height: 2em;
   border: 1px solid #f8f2f2;
   border-radius: 0.5em;
@@ -164,7 +164,12 @@ body {
   outline: none;
 }
 
-.submit-container input[type="submit"]:hover {
+.submit-container .btn a {
+  text-decoration: none;
+  color: #0e0e0e;
+}
+
+.submit-container .btn:hover {
   background-color: #e7ecf0;
   cursor: pointer;
   box-shadow: #9c9c9e 1px 1px;
