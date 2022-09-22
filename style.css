@@ -96,7 +96,7 @@ body {
 
 .video {
   display: none;
-  width: 50vw;
+  width: 35vw;
 }
 
 .video.active {
@@ -105,7 +105,7 @@ body {
 
 #gif {
   width: 100%;
-  height: auto;
+  height: 35vh;
   margin: 0 auto;
 }
 
@@ -259,6 +259,14 @@ body {
     /* top: 50%; */
     /* position: fixed; */
     align-items: center;
+  }
+
+  .video {
+    width: 50vw
+  }
+
+  #gif {
+    height: 15em;
   }
 
   .google-search_icon input {

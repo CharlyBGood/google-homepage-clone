@@ -42,6 +42,9 @@ search.addEventListener("click", () => {
   let keyword = document.getElementById("gsearch").value;
   console.log(keyword);
   let gifDiv = document.getElementById("video");
+  let section = document.getElementById("main_section");
+  section.style.gap = "1em";
+  section.style.margin = "3% auto"
   gifDiv.style.display = "block";
   Giphy.getUrlAsync(keyword, (videoURL) => {
     document.getElementById("gif").src = videoURL;
