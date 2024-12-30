@@ -55,8 +55,25 @@ function sendGif() {
   let section = document.getElementById("main_section");
   section.style.gap = "1em";
   section.style.margin = "3% auto";
-  gifDiv.style.display = "block";
+  gifDiv.style.display = "flex";
   Giphy.getUrlAsync(keywordW, (videoURL) => {
     document.getElementById("gif").src = videoURL;
   });
 }
+
+
+let shareButton = document.getElementById("share-btn");
+
+shareButton.addEventListener("click", () => { 
+  if (navigator.share) {
+    navigator.share({
+      title: "Gif",
+      text: "Check out this gif",
+      url: document.getElementById("gif").src,
+    })
+      .then(() => console.log("Successful share"))
+      .catch((error) => console.log("Error sharing", error));
+  } else {
+    console.log("Web Share API not supported");
+  }
+});

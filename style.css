@@ -89,21 +89,26 @@ body {
   gap: 7em;
 }
 
-/* .google-img {
-  
-}
-
-.google-search {  
-  
-} */
-
 .video {
   display: none;
   width: 35vw;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1em;
 }
 
 .video.active {
-  display: block;
+  display: flex;
+}
+
+.video button {
+  outline: none;
+  border: 1px solid #dfd7d7;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  font-size: 1.4em;
+  color: #0e0e0e;
 }
 
 #gif {
@@ -245,6 +250,7 @@ body {
   .nav-container_right {
     margin: 0;
   }
+
   .nav-container_left.active a {
     position: relative;
     padding: 0 2em;
